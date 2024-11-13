@@ -2,9 +2,16 @@
 
 int main(int argc, char **argv)
 {
-	printf("Hola mundo\n");
+	printf("Hola mundo: ");
 	for (int i = 1; i < argc; ++i) {
-		printf("%s\n", argv[i]);
+		if (i == argc - 1)
+		{
+			printf("%s\n", argv[i]);
+		}
+		else
+		{
+			printf("%s, ", argv[i]);
+		}
 	}
 	return 0;
 }

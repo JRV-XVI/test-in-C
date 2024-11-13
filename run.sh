@@ -1,4 +1,5 @@
  #!/bin/bash
 
  gcc -o hello hello.c
- ./hello
+ gcc -o fork fork.c
+ ./fork
